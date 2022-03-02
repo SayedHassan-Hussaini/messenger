@@ -1,0 +1,32 @@
+.login{
+    background-color: #eff3fa !important;
+    height: 100vh !important;
+    text-align: center !important;
+    padding-top: 20% !important;
+}
+
+.btnGoogle,
+.btnGoogle:hover {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: 0.2px;
+  color: #000000;
+  width: 100% !important;
+  height: 45px;
+  background: #ffffff;
+  border: 1px solid blue;
+  box-sizing: border-box;
+  border-radius: 8px;
+}
+.btnGoogle{
+    width: 337px !important;
+}
+.btnGoogle:hover {
+    width: 337px !important;
+  color: gray;
+}
+.googleIcon {
+  margin-right: 10px !important;
+  font-size: 30px;
+}
