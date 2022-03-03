@@ -1,7 +1,8 @@
 import React from "react";
 import { Icon } from "@iconify/react";
 import style from "./style.module.css";
-import { Card } from "react-bootstrap";
+ import firebase from 'firebase/compat/app'
+ import { auth } from "../firebase";
 
 const Login = () => {
   return (
@@ -9,7 +10,7 @@ const Login = () => {
         <button
           className={`${style.btnGoogle} mt-4`}
           type="button"
-          // onClick={renderProps.onClick}
+          onClick={()=> firebase.auth().signInWithRedirect(new firebase.auth.GoogleAuthProvider())}
           // disabled={renderProps.disabled}
         >
           <Icon className={style.googleIcon} icon="flat-color-icons:google" />
@@ -19,11 +20,11 @@ const Login = () => {
         <button
           className={`${style.btnGoogle} mt-4`}
           type="button"
-          // onClick={renderProps.onClick}
+          onClick={()=> firebase.auth().signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
           // disabled={renderProps.disabled}
         >
           <Icon className={style.googleIcon} icon="logos:facebook" />
-          Login with Google
+          Login with Facebook
         </button>
     </div>
   );
