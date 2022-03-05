@@ -60,7 +60,7 @@ const Chats = () => {
     navigate("/");
   };
 
-  if (!user || loading) return "Loading ...";
+  if (!user || loading) return <div className="text-center pt-5">Loading ...</div>;
 
   return (
     <div className="chat-page">
