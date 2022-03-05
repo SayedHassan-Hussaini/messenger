@@ -68,14 +68,16 @@ const Chats = () => {
         <Container>
           <Navbar.Brand href="#home">Navbar</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link
+           
+          </Nav>
+          <Nav.Link
               onClick={() => {
                 LogoutHandler();
               }}
+              style={{float:"right"}}
             >
-              Logout
+             Logout
             </Nav.Link>
-          </Nav>
         </Container>
       </Navbar>
 
