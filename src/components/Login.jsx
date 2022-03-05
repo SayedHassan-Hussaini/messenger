@@ -17,7 +17,7 @@ const Login = () => {
           Login with Google
         </button>
         <br/>
-        <button
+        {/* <button
           className={`${style.btnGoogle} mt-4`}
           type="button"
           onClick={()=> firebase.auth().signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
@@ -25,7 +25,7 @@ const Login = () => {
         >
           <Icon className={style.googleIcon} icon="logos:facebook" />
           Login with Facebook
-        </button>
+        </button> */}
     </div>
   );
 };
